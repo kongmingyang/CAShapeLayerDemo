@@ -19,6 +19,7 @@
     [super viewDidLoad];
 //  https://www.jianshu.com/p/6c9aa9c5dd68
     
+    //https://blog.csdn.net/rhljiayou/article/details/9919713
     //画麦克风
     UIView *voiceView = [[UIView alloc]initWithFrame:CGRectMake(10, 20,80, 80)];
     voiceView.backgroundColor = [UIColor lightGrayColor];
@@ -91,6 +92,7 @@
     [path3 moveToPoint:CGPointMake(200, 100)];
     [path3 addArcWithCenter:CGPointMake(300, 100) radius:75 startAngle:0 endAngle:M_PI_4 clockwise:YES];
     [path3 closePath];//封闭
+    [path3 stroke];//绘制
     CAShapeLayer *arc = [CAShapeLayer layer];
     arc.lineWidth = 3;
     arc.fillColor = [UIColor clearColor].CGColor;
